@@ -32,9 +32,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: nginx-deployment
-
+            name: guestbook-ui
             port: 
               number: 80
-        
-        
