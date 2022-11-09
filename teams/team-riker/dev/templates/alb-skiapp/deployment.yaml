@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: skiapp-deployment
+  name: skiapp-deployment-1
   namespace: team-riker
 spec:
   selector:
