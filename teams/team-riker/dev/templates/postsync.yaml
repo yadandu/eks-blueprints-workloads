@@ -16,5 +16,4 @@ spec:
           - "-v"
           - "mkdir yamuna"
           - "https://www.baeldung.com/curl-rest"
-      restartPolicy: Never
   backoffLimit: 2
