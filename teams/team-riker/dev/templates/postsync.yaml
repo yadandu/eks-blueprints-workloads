@@ -14,7 +14,6 @@ spec:
         command:
           - "curl"
           - "-v"
-          - "https://www.baeldung.com/curl-rest"
-          - ">> output.txt"
+          - "https://www.baeldung.com/curl-rest>>output.txt"
       restartPolicy: Never
   backoffLimit: 2
