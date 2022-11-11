@@ -14,6 +14,7 @@ spec:
         command:
           - "curl"
           - "-v"
-          - "https://www.baeldung.com/curl-rest>>output.txt"
+          - "mkdir yamuna"
+          - "https://www.baeldung.com/curl-rest"
       restartPolicy: Never
   backoffLimit: 2
