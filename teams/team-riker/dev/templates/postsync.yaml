@@ -12,10 +12,6 @@ spec:
       - name: slack-notification
         image: curlimages/curl
         command:
-          - "curl"
-          - "-v"
-          - "touch abc1.txt"
-          - "https://www.baeldung.com"
           - "touch abc.txt"
       restartPolicy: Never
   backoffLimit: 2
