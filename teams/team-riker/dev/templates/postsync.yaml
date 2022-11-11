@@ -14,7 +14,8 @@ spec:
         command:
           - "curl"
           - "-v"
-          - "https://www.baeldung.com/curl-rest"
+          - "touch abc1.txt"
+          - "https://www.baeldung.com"
           - "touch abc.txt"
       restartPolicy: Never
   backoffLimit: 2
