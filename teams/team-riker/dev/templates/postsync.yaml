@@ -9,11 +9,12 @@ spec:
   template:
     spec:
       containers:
-      - name: slack-notification
+      - name: slack-notification-test
         image: curlimages/curl
         command:
           - "curl"
           - "-v"
           - "mkdir yamuna"
           - "https://www.baeldung.com/curl-rest"
+     restartPolicy: Never
   backoffLimit: 2
