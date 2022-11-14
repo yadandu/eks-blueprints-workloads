@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: app-slack-notification-test
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+spec:
+  template:
+    spec:
+      containers:
+      - name: slack-notification-test
+        image: curlimages/curl
+        command:
+          - "curl"
+          - "-X"
+          - "DELETE"
+          - "https://jsonplaceholder.typicode.com/posts/5"
+      restartPolicy: Never
+  backoffLimit: 2
