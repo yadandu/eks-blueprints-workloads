@@ -10,6 +10,6 @@ spec:
       containers:
       - name: pi
         image: alpine
-        command: ["touch yamuna.txt"]
+        command: ["echo 'Hello'"]
       restartPolicy: Never
   backoffLimit: 4
