@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: pi-notification-
+  generateName: pi
   annotations:
     argocd.argoproj.io/hook: PostSync
 spec:
