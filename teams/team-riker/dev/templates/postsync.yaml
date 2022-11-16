@@ -11,6 +11,5 @@ spec:
       - name: pi
         image: alpine
         command: ['sh', '-c', 'echo First Batch Job; sleep 10']
-      parallelism: 2
       restartPolicy: Never
   backoffLimit: 1
