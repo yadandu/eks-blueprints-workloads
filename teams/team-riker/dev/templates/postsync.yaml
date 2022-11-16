@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: pi
-        image: busybox
-        command: ["/bin/sh", "-ec", "mkdir yamuna"]
+        image: alpine
+        command: ['sh', '-c', 'echo First Batch Job; sleep 10']
       restartPolicy: Never
   backoffLimit: 1
