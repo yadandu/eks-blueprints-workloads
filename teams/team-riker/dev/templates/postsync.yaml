@@ -10,7 +10,10 @@ spec:
       containers:
       - name: pi
         image: alpine
-        command: [ "/bin/bash", "-c", "--" ]
+        command:
+        -/bin/bash
+        --c
+        --
         args: [ "while true; do sleep 30; done;" ]
       restartPolicy: Never
   backoffLimit: 1
