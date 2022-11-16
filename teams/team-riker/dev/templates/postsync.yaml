@@ -5,7 +5,8 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PostSync
 spec:
-  completions: 3 # number of times to run
+  completions: 4 # number of times to run
+  parallelism: 2 # number of pods that can run in parallel
   template:
     spec:
       containers:
