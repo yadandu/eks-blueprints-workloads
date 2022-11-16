@@ -9,12 +9,8 @@ spec:
     spec:
       containers:
       - name: pi
-        image: alpine
-        command:
-        - /bin/sh
-        - -c
-        - |
-          echo $USER
+        image: ubuntu:latest
+        command: [ "/bin/bash", "-c", "--" ]
         args: [ "while true; do sleep 30; done;" ]
       restartPolicy: Never
   backoffLimit: 1
