@@ -10,6 +10,7 @@ spec:
       containers:
       - name: pi
         image: alpine
-        command: ['sh', '-c', 'echo First Batch Job; sleep 1000']
+        command: ['sh', '-c', 'echo First Batch Job; sleep 10']
+      completions: 2
       restartPolicy: Never
   backoffLimit: 1
