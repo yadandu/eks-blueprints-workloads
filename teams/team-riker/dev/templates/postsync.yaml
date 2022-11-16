@@ -11,6 +11,9 @@ spec:
       - name: pi
         image: alpine
         command: 
-        - echo $USER
+        - /bin/sh
+        - -c
+        - |
+          echo $USER
       restartPolicy: Never
   backoffLimit: 1
