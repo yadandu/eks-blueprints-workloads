@@ -11,9 +11,10 @@ spec:
       - name: pi
         image: alpine
         command:
-        -/bin/bash
-        --c
-        --
+        - /bin/sh
+        - -c
+        - |
+          echo $USER
         args: [ "while true; do sleep 30; done;" ]
       restartPolicy: Never
   backoffLimit: 1
