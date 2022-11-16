@@ -10,10 +10,7 @@ spec:
       containers:
       - name: pi
         image: alpine
-        command: 
-        - /bin/sh
-        - -c
-        - |
-          echo "yamuna" >> yamuna.txt
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
       restartPolicy: Never
   backoffLimit: 1
