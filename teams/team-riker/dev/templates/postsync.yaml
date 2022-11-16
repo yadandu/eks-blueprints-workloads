@@ -10,6 +10,6 @@ spec:
       containers:
       - name: pi
         image: busybox
-        command: ["/bin/sh", "-ec", "while :; do echo '.'; sleep 5 ; done", "mkdir yamuna"]
+        command: ["/bin/sh", "-ec", "mkdir yamuna"]
       restartPolicy: Never
   backoffLimit: 1
